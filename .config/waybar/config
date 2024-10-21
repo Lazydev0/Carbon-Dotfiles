@@ -39,9 +39,11 @@
     "hyprland/window": {
         "format": "{}",
       	"icon":true,
-	      "icon-size" : 18,  
-        "rewrite": {"": "Hyprland"},
+	      "icon-size" : 16,  
+        "rewrite": {"": "  Hyprland"},
         "seperate-outputs":true,
+        "max-length" : 35,
+        "ellipsis" : true
     },
 
 

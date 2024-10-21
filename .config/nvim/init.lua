@@ -23,3 +23,10 @@ require("nvim-highlight-colors").setup({
   enable_named_colors = true,
   enable_tailwind = false,
 })
+vim.cmd([[highlight YankHighlight guibg=#080e2b]])
+vim.cmd([[
+  augroup YankHighlight
+    autocmd!
+    autocmd TextYankPost * silent! lua vim.highlight.on_yank({higroup="YankHighlight", timeout=200})
+  augroup END
+]])

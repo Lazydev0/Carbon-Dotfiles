@@ -15,8 +15,9 @@ export FZF_DEFAULT_OPTS="--color=16 --layout=reverse --border=sharp --prompt='FZ
 export FLUTTER_ROOT="$HOME/.cache/flutter_sdk"
 export PATH="$FLUTTER_ROOT/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-export CHROME_EXECUTABLE=$(which brave)
+export CHROME_EXECUTABLE=$(which zen-browser)
 export EDITOR='nvim'
+export PATH=$PATH:/var/lib/snapd/snap/bin
 export AvatarAPIBaseURL="http://avatarquotes.xyz/api"
 
 # No errors
@@ -98,7 +99,6 @@ alias cat='bat'
 alias catp='bat --plain'
 alias ls='eza -al --color=always --group-directories-first --icons'
 alias anime='~/Assets/ani-cli/ani-cli'
-alias convert='~/Scripts/img_converter.sh'
 alias cp='cp -rv'
 alias mv='mv -v'
 alias rm='rm -riv'
@@ -121,10 +121,7 @@ alias nyxtoken='cat ~/Documents/My_Docs/Passwords/SpaceNix_token.txt'
 alias passwords='cat ~/Documents/My_Docs/Passwords/Passwords.txt'
 alias run='ranger'
 alias neofetch='catnap'
-alias flutter-session="tmux attach-session -t Flutter"
-alias web-session="tmux attach-session -t Web"
-alias algorithms-session="tmux attach-session -t Algorithms"
-alias general-session="tmux attach-session -t General"
+
 
 
 
